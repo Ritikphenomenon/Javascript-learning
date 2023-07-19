@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+        var tweets=["Good morning","having tea","all the best"];
+        var j="";
+        for(var i=0;i<tweets.length;i++){
+        j=j+"   "+tweets[i];
+        }
+        document.getElementById("para").innerHTML=j;
+    </script>
+</body>
+</html>

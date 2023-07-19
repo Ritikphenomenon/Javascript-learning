@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random number guessing game</title>
+</head>
+<body>
+    <p>Enter a Number between (1-5)</p>
+  <input type="text" id="inp">
+  <button id="add">submit</button>  
+  <script>
+    document.getElementById("add").onclick=function(){
+      var val1=  document.getElementById("inp").value;
+      var val2=Math.floor(Math.random()*10)+1;//to make range between 1 to 10.
+      if(val1==val2){
+        alert("you won");
+        alert(val2);
+      }
+      else{
+        alert("you loss");
+        alert(val2);
+      }
+    }
+  </script>
+</body>
+</html>
